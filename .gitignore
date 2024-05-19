@@ -1,0 +1,3 @@
+# Ignore weights directory and all its content
+weights/
+TrainingRecords/
