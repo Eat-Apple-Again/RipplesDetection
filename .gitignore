@@ -1,3 +1,3 @@
 # Ignore weights directory and all its content
-/ar0DB/weights/
-/ar0DB/TrainingRecords/
+/ar2DB/weights/
+/ar2DB/TrainingRecords/
