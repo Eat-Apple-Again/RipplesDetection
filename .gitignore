@@ -1,3 +1,4 @@
 # Ignore weights directory and all its content
 /ar0DB/weights/
 /ar0DB/TrainingRecords/
+/ar0DB/inference
