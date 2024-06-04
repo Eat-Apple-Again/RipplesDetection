@@ -1,3 +1,9 @@
 # Ignore weights directory and all its content
 /ar0DB/weights/
 /ar0DB/TrainingRecords/
+/ar0DB/inference
+ar0DB/inference/draw_heatmap.ipynb
+ar0DB/inference/KD_inference.ipynb
+ar0DB/inference/KD_inference copy.ipynb
+ar0DB/inference/png2mp4.ipynb
+ar0DB/inference/KD_model_tester.ipynb
