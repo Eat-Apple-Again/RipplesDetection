@@ -1,6 +1,5 @@
 # Ignore weights directory and all its content
 /ar2DB/weights/
-/ar2DB/TrainingRecords/
 /ar2DB/inference/
 /ar2DB/inference
 /ar2DB/inference
