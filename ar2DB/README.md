@@ -63,3 +63,13 @@ KD_segformer_0616
 先不使用 Position Embedding
 打算先找出 Focal Loss 效果最好者再拿來加上 Position Embedding，以節省時間。
 改 Hugging Face 的 Library,把 SegformerDecodeHead 加上有和沒有 Position Embedding 的版本
+--------------------------------------------------------
+KD_segformer_0621
+"weights/weights_KD_segformer_0616/weights_KD_segformer_0616_{int(teacher_ratio*100)}"
+->
+使用 [train_0501] 資料集 (300張train+validation dataset、60張test dataset)
+已完成[KD_segformer_0616]使用 Focal loss 改寫 Criterion 的訓練
+接著要嘗試加入 Position Embedding 的效果
+在 Hugging Face 的 modeling_segformer.py裡，class SegformerForSemanticSegmentation 的 decode_head 使用 try_SegformerDecodeHead_PE
+將位置資訊和特徵資訊合併
+--------------------------------------------------------
