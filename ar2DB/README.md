@@ -73,3 +73,12 @@ KD_segformer_0621
 在 Hugging Face 的 modeling_segformer.py裡，class SegformerForSemanticSegmentation 的 decode_head 使用 try_SegformerDecodeHead_PE
 將位置資訊和特徵資訊合併
 --------------------------------------------------------
+KD_segformer_0627
+"weights/weights_KD_segformer_0627/weights_KD_segformer_0627_{int(teacher_ratio*100)}"
+->
+使用 [train_0501] 資料集 (300張train+validation dataset、60張test dataset)
+Position Embedding 喧賓奪主 XD
+把 feature map 和 position embedding 的比例調整成
+hidden_states_PE = hidden_states + 0.01*(self.pos_embedding)
+在 Hugging Face 的 modeling_segformer.py的第863行
+--------------------------------------------------------
