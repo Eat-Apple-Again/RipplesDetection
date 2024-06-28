@@ -82,3 +82,11 @@ Position Embedding 喧賓奪主 XD
 hidden_states_PE = hidden_states + 0.01*(self.pos_embedding)
 在 Hugging Face 的 modeling_segformer.py的第863行
 --------------------------------------------------------
+KD_segformer_0628
+"weights/weights_KD_segformer_0628/weights_KD_segformer_0628_{int(teacher_ratio*100)}"
+->
+使用 [train_0501] 資料集 (300張train+validation dataset、60張test dataset)
+
+試新的 Position Embedding 公式
+並改回 hidden_states_PE = hidden_states + (self.pos_embedding)
+--------------------------------------------------------
