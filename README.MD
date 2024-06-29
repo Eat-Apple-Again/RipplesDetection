@@ -12,4 +12,11 @@ KD_segformer_0616
 打算先找出 Focal Loss 效果最好者再拿來加上 Position Embedding，以節省時間。
 改 Hugging Face 的 Library,把 SegformerDecodeHead 加上有和沒有 Position Embedding 的版本
 --------------------------------------------------------
+KD_segformer_0628
+"weights/weights_KD_segformer_0628/weights_KD_segformer_0628_{int(teacher_ratio*100)}"
+->
+使用 [train_0518] 資料集 (300張train+validation dataset、60張test dataset)
 
+試新的 Position Embedding 公式(d = 10000 )
+hidden_states_PE = hidden_states + 0.01*(self.pos_embedding)
+--------------------------------------------------------
