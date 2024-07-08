@@ -7,3 +7,4 @@ ar0DB/inference/KD_inference copy.ipynb
 ar0DB/inference/png2mp4.ipynb
 ar0DB/inference/KD_model_tester.ipynb
 /weights
+/ar1DB/weights
