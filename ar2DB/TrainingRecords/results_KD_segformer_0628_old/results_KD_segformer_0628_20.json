@@ -1,0 +1,11 @@
+{
+    "train_sizes": [
+        5,
+        10,
+        100,
+        200,
+        300
+    ],
+    "mean_val_losses": [],
+    "std_val_losses": []
+}

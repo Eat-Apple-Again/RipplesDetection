@@ -1,0 +1,4 @@
+weights/weights_KD_segformer_0518/weights_KD_segformer_0518_{int(teacher_ratio*100)}"
+-> 嘗試 Focal Loss , 重新整理git資料夾，眨眼間就把Focal Loss的權重弄不見ㄌ 😥
+
+
